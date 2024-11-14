@@ -1,45 +1,43 @@
 body, html {
     margin: 0;
     padding: 0;
-}
-p{
-    font-family: sans-serif;
-}
+} /*Quita los espacios inecesarios*/
+
 
 .header {
     background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(28,28,28,1) 72%, rgba(102,102,102,1) 84%, rgba(255,255,255,1) 100%);
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-between; /* Distribuye el logo a la izquierda y el menú a la derecha */
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-}
+} /*Da el diseño de la parte de arriba, del menú y logo*/
+
 
 .logo-container {
     display: flex;
     align-items:flex-end;
-    padding-left: 300px;
+    padding-left: 10%;
 }
-
 .logo {
-    height: 90px;
+    height: 80px;
 }
+/* Se modifica el contenedor y la forma del logo*/
 
 
 ul {
     padding-left: 0;
     margin: 0;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 .nav-container {
-    margin-right: 100px; /* Ajusta la distancia entre el menú y el borde derecho */
+    margin-right: 100px; 
 }
 nav ul li {
     font-size: 1rem;
@@ -50,51 +48,11 @@ nav ul li a {
     font-family: sans-serif;
     text-decoration: none;
 }
+/* Se modifican los elementos del menú, dandoles color, forma, distancia, etc...*/
 
-nav .dropdown {
-    position: relative;
-    cursor: pointer;
-}
-
-nav .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    text-align: center;
-    border-radius: 5%;
-    right: 0;
-}
-
-.dropdown-content li {
-    list-style: none;
-    padding: 1rem;
-    text-align: center;
-}
-
-.dropdown-content li a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f1f1f1;
-}
 
 #comida {
     text-align: center;
-}
-
-h2 {
-    margin: 20px 0;
-    font-family: sans-serif;
 }
 
 .imagenes {
@@ -434,4 +392,10 @@ h2 {
     font-size: 20px;
     color: #333;
 }
-
+h2 {
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+p{
+    font-family: sans-serif;
+} /*Coloca un tipo de letra especifico para todos los parrafos*/
