@@ -20,7 +20,7 @@ body, html {
     display: flex;
     align-items:flex-end;
     padding-left: 10%;
-}
+} /*Da el diseño del contenedor del logo*/
 .logo {
     height: 80px;
 }
@@ -30,18 +30,18 @@ body, html {
 ul {
     padding-left: 0;
     margin: 0;
-}
+} /*Quita los espacios inecesarios*/
 nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
-}
+} /*Quita los espacios inecesarios*/
 .nav-container {
     margin-right: 100px; 
-}
+} /*Da el diseño*/
 nav ul li {
     font-size: 1rem;
-}
+} /*Da el diseño*/
 
 nav ul li a {
     color: #ffffff;
@@ -53,37 +53,33 @@ nav ul li a {
 
 #comida {
     text-align: center;
-}
-
+} /*Da el diseño de la sección de comida*/
 .imagenes {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
-}
-
+} /*Da el diseño de las imagenes de la sección de comida*/
 .imagenes img {
-    width: auto; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: 250px; /* Puedes ajustar la altura según tus necesidades */
-}
-
+    width: auto; 
+    height: 250px;
+} /*Da el diseño de las imagenes de la sección de comida*/
 .imagen-con-texto {
     text-align: center;
-}
-
+} /*Da el diseño de las imagenes de la sección de comida*/
 .imagen-con-texto p {
     margin-top: 8px;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    background-color: #131313; /* Fondo llamativo */
+    background-color: #131313; 
     padding: 10px 15px;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 8px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
 }
-
+/*Le dan formato a los productos destacados em la pagina de inicio*/
 
 
 .footer {
@@ -97,42 +93,42 @@ nav ul li a {
     padding: 40px 20px;
     box-sizing: border-box;
     border-top: 2px solid #444;
-}
+} /*Da el diseño de la parte de abajo de la página*/
 
 .footer-links {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Distribuye las secciones horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-}
+} /*Da el diseño de los enlaces de la parte de abajo de la página*/
 
 .contactos {
     display: flex;
     justify-content: center;
     gap: 15px;
-
-}
+ 
+} /*Da el diseño de los contactos de la parte de abajo de la página*/
 
 .contactos a {
     text-decoration: none;
     outline: none;
-}
+} /*Quita el subrayado de los enlaces*/
 
 .contactos img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
-}
+} /*Da el diseño de las imagenes de los contactos, con su respectiva animación*/
 
 .contactos img:hover {
     transform: scale(1.1);
-}
+} /*Da la animación al pasar el mouse por encima de las imagenes de los contactos*/
 
 .footer-nav {
     display: flex;
     gap: 40px; /* Espacio entre los enlaces */
-}
+} /*Da el diseño de los enlaces de la parte de abajo de la página*/
 
 .footer-link {
     text-decoration: none;
@@ -140,11 +136,11 @@ nav ul li a {
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s ease;
-}
+} /*Da el diseño de los enlaces de la parte de abajo de la página (Nosotros y aviso de privacidad)*/
 
 .footer-link:hover {
     color: #ccc; /* Color de hover para los enlaces */
-}
+} 
 
 .informacion {
     width: 100%;
@@ -154,7 +150,7 @@ nav ul li a {
     font-size: 13px;
     color: #ddd;
     line-height: 1.8;
-}
+} /*Da el diseño de la parte de abajo de la página*/
 
 .footer-text {
     text-align: center;
@@ -162,7 +158,7 @@ nav ul li a {
     font-size: 14px;
     color: #bbb;
     line-height: 1.6;
-}
+} /*Da el diseño de la parte de abajo de la página*/
 
 
 .about-us {
@@ -171,48 +167,42 @@ nav ul li a {
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
-}
-
+} /* Da el espacio entre la izquierda y el texto*/
 .about-us h2 {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
-}
-
+} /*Da el diseño del titulo de la página "Nosotros"*/
 .about-text {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 20px;
     text-align: center;
-}
-
+} /*Da el diseño del texto de la página "Nosotros"*/
 .about-us p {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
     text-align: justify;
     margin-bottom: 20px;
-}
-
+} /*Da el diseño del texto de la página "Nosotros"*/
 .about-us strong {
     font-weight: bold;
     font-size: 1.1rem;
     color: #333;
-}
-
+} /*Da el diseño del texto de la página "Nosotros"*/
 .last-paragraph {
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
     color: #e74c3c;
     margin-top: 40px;
-}
-
+}  /*Da el diseño del texto de la página "Nosotros"*/
 .about-us p:last-child {
     margin-bottom: 0;
-}
+} /* Le da formato a la pagina "Nosotros"*/
 
 .privacy-policy {
     background-color: #f9f9f9;
@@ -220,7 +210,7 @@ nav ul li a {
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy h2 {
     text-align: center;
@@ -228,7 +218,7 @@ nav ul li a {
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy p {
     font-size: 1rem;
@@ -236,112 +226,113 @@ nav ul li a {
     color: #555;
     text-align: justify;
     margin-bottom: 20px;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy strong {
     font-weight: bold;
     font-size: 1.1rem;
     color: #333;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy ul {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 20px;
-}
+}   /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy ul li {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy ul li::before {
     content: "•";
     color: #e74c3c;
     margin-right: 10px;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 .privacy-policy p:last-child {
     margin-bottom: 0;
-}
+} /* Le da formato a la pagina "Aviso de privacidad"*/
 
 
 #contenido{
     width: 810px;
     margin: 0 auto;
-}
+} /*Centra el contenido de la página de incio*/
 #pizza {
     display: flex;
-    align-items: center; /* Centra verticalmente el texto al lado de la imagen */
-    gap: 1rem; /* Añade espacio entre el texto y la imagen */
-}
+    align-items: center; 
+    gap: 1rem; 
+} /*Da el diseño de la sección de pizzas*/
 
 #imgPizza {
     width: 400px;
     margin-right: 5px;
     
-}
+} /*Da el diseño de la sección de pizzas*/
 #DescPizza{
     margin: 15px;
-}
+} /*Da el diseño de la sección de pizzas*/
 
 #Hamburguesas {
     display: flex;
-    align-items: center; /* Centra verticalmente el texto al lado de la imagen */
-    gap: 1rem; /* Añade espacio entre el texto y la imagen */
-}
+    align-items: center; 
+    gap: 1rem; 
+} /*Da el diseño de la sección de hamburguesas*/
 
 #imgeHamburguesa{
     width: 400px;
     margin-left: 5px;
-}
+} /*Da el diseño de la sección de hamburguesas*/
 #DescHamburguesas{
     margin: 15px;
-}
+} /*Da el diseño de la sección de hamburguesas*/
 #Bebidas{
     display: flex;
-    align-items: center; /* Centra verticalmente el texto al lado de la imagen */
-    gap: 1rem; /* Añade espacio entre el texto y la imagen */
-}
+    align-items: center; 
+    gap: 1rem; 
+} /*Da el diseño de la sección de bebidas*/
 #imgBebidas{
     width: 400px;
     margin-right: 5px;
-}
+} /*Da el diseño de la sección de bebidas*/
 #DescBebidas{
     margin: 15px;
-}
+} /*Da el diseño de la sección de bebidas*/
+
 .separacion{
     width: 100%;
     height: 10px;
     background: rgb(54, 54, 54);
-}
+} /*Separa las secciones de la página de inicio*/
 #SecFachada {
-    width: 100%; /* La sección ocupa todo el ancho de la página */
-    padding: 100px 0; /* Mantiene el espacio superior e inferior, sin añadir padding lateral */
+    width: 100%;
+    padding: 100px 0; 
     background: -webkit-linear-gradient(left, rgba(194,202,204,1) 0%, rgba(194,202,204,1) 37%, rgba(255,255,255,1) 37%, rgba(254,254,254,1) 100%);
     background: -o-linear-gradient(left, rgba(194,202,204,1) 0%, rgba(194,202,204,1) 37%, rgba(255,255,255,1) 37%, rgba(254,254,254,1) 100%);
-}
+} /*Da el diseño de la sección de la fachada*/
 
 #FachadaContainer {
     width: 810px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
+    margin: 0 auto; 
+} /*Centra el contenido de la sección de la fachada*/
 
 #Fachada {
-    display: flex; /* Alinea el texto al lado de la imagen */
-    align-items: center; /* Centra verticalmente el texto al lado de la imagen */
-    gap: 1rem; /* Añade espacio entre el texto y la imagen */
-}
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+} /*Da el diseño de la sección de la fachada*/
 
 #imgFachada {
-    width: 500px; /* Ajusta el ancho de la imagen */
-    margin-right: 5px; /* Espacio adicional a la derecha de la imagen */
-}
+    width: 500px;
+    margin-right: 5px; 
+} /*Da el diseño de la sección de la fachada*/
 
 #DescFachada {
     margin: 15px;
-}
+} /*Da el diseño de la sección de la fachada*/
 
 .pizza-gallery {
     display: flex;
@@ -349,16 +340,10 @@ nav ul li a {
     gap: 20px;
     justify-content: center;
     padding: 20px;
-}
-
-
-
+} /*Da el diseño de la galería de comida a las distintas paginas*/
 .pizza-item:hover {
     transform: scale(1.05);
-}
-
-
-
+} /*Da la animación al pasar el mouse por encima de las imagenes de la galería de comida*/
 .pizza-item {
     width: 397px;
     height: 325px;
@@ -371,31 +356,30 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
+} /*Da el diseño de las imagenes de la galería de comida*/
 .pizza-image {
     width: 100%;
     height: 70%; /* Ajusta la altura de la imagen */
     object-fit: cover;
     border-radius: 5px;
-}
+} /*Da el diseño de las imagenes de la galería de comida*/
 
 .pizza-price {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #333;
-}
+} /*Da el diseño del precio de la galería de comida*/
 
 .pizza-name {
     font-weight: bold;
     font-size: 20px;
     color: #333;
-}
+} /*Da el diseño del nombre cada comida de la galería de comida*/
 h2 {
     margin: 20px 0;
     font-family: sans-serif;
-}
+} /*Da el diseño de los titulos de las distintas paginas*/
 p{
     font-family: sans-serif;
 } /*Coloca un tipo de letra especifico para todos los parrafos*/
