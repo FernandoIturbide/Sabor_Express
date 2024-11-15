@@ -51,6 +51,52 @@ nav ul li a {
 /* Se modifican los elementos del menú, dandoles color, forma, distancia, etc...*/
 
 
+nav .dropdown {
+    position: relative;
+    cursor: pointer;
+} /*Habilita el menú al pasar el cursor sobre la palabra menú*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 180px;
+    padding: 0.5rem 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    z-index: 1;
+} /*Da el diseño del menú desplegable*/
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+} /*Da el diseño del menú desplegable*/
+
+.dropdown-content li {
+    list-style: none;
+    text-align: center;
+} /*Da el diseño del menú desplegable*/
+
+.dropdown-content li a {
+    color: #333;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+} /*Da el diseño del menú desplegable*/
+
+.dropdown-content li a:hover {
+    background-color: #f8f8f8;
+    color: #555;
+    border-radius: 5px;
+} /*Da el diseño del menú desplegable*/
+
 #comida {
     text-align: center;
 } /*Da el diseño de la sección de comida*/
@@ -338,9 +384,10 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
 } /*Da el diseño de la galería de comida a las distintas paginas*/
+
 .pizza-item:hover {
     transform: scale(1.05);
 } /*Da la animación al pasar el mouse por encima de las imagenes de la galería de comida*/
@@ -359,7 +406,7 @@ nav ul li a {
 } /*Da el diseño de las imagenes de la galería de comida*/
 .pizza-image {
     width: 100%;
-    height: 70%; /* Ajusta la altura de la imagen */
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
 } /*Da el diseño de las imagenes de la galería de comida*/
@@ -373,9 +420,73 @@ nav ul li a {
 
 .pizza-name {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     color: #333;
+    margin-top: 10px;
 } /*Da el diseño del nombre cada comida de la galería de comida*/
+
+
+.pizza-item {
+    width: 30%; /* Ajusta el ancho para que puedan caber 3 por fila */
+    height: auto;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px; /* Ajusta el padding si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pizza-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+} /*Da el diseño de la descripción de la galería de comida*/
+
+.pizza-extended-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 15px;
+} /*Da el diseño de la descripción extendida de la galería de comida*/
+
+.pizza-sizes {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #444;
+    text-align: left;
+} /*Da el diseño de los tamaños de la galería de comida*/
+
+.size-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+} /*Da el diseño de los tamaños de la galería de comida*/
+
+.size-list li {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+} /*Da el diseño de los tamaños de la galería de comida*/
+
+.size-list li::before {
+    content: "•";
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+} /*Da el diseño de los tamaños de la galería de comida*/
+
 h2 {
     margin: 20px 0;
     font-family: sans-serif;
